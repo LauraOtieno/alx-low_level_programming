@@ -1,25 +1,21 @@
 #include <stdio.h>
+
+
 /**
- * main - Entry point
+ * main - prints the alphabet
  *
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int d;
+	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
+        int i;
 
-	for (d = 0; d < 100; d++)
+	for (i = 0; i < 26; i++)
 	{
-		putchar((d / 10) + '0');
-		putchar((d % 10) + '0');
-		if (d != 99)
-		{
-			putchar(',');
-			putchar(' ');
-		}
+		putchar( alp[i]);
 	}
 	putchar('\n');
-
 	return (0);
 }
